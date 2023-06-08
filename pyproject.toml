@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "renko"
+version = "0.1.0"
+description = ""
+authors = ["Roy"]
+readme = "README.md"
+packages = [ { include = "renko" } ]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.0.2"
+pydantic = "^1.10.8"
+yfinance = "^0.2.20"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+ipykernel = "^6.23.1"
+jupyter = "^1.0.0"
+plotly = "^5.14.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
